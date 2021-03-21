@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="Style.css" type="text/css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Prueba</title>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row justify-content-start">
+				<h2><i class="fa fa-user-friends"></i>Workers</h2>
+				<br />
+
+				<div class="col-2">
+					<div id="user">
+						<div id="user-1" class="logo" draggable="true">
+							<p>MC</p>
+						</div>
+
+						<div class="name">
+							<p>Maria Cecilia</p>
+						</div>
+						<br />
+
+						<div id="user-2" class="logo" draggable="true">
+							<p>HA</p>
+						</div>
+
+						<div class="name">
+							<p>Harper Adams</p>
+						</div>
+						<br />
+
+						<div id="user-3" class="logo" draggable="true">
+							<p>EM</p>
+						</div>
+
+						<div class="name">
+							<p>Everlyn Manson</p>
+						</div>
+						<br />
+						<div id="user-4" class="logo" draggable="true">
+							<p>JB</p>
+						</div>
+
+						<div class="name">
+							<p>James Barker</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-10">
+					<table class="table">
+						<thead>
+							<tr class="tablec">
+								<th scope="col" style="text-align: left !important">
+									<i class="fas fa-chevron-circle-down"></i> Pending Tasks
+								</th>
+								<th scope="col">
+									<i class="far fa-building"></i><br />Bulding
+								</th>
+								<th scope="col">
+									<i class="fas fa-users"></i><br />Responsable
+								</th>
+								<th scope="col"><i class="fas fa-table"></i><br />Date/Hour</th>
+								<th scope="col">
+									<i class="far fa-check-circle"></i><br />Status
+								</th>
+								<th scope="col">
+									<i class="fas fa-gopuram"></i><br />Priority
+								</th>
+							</tr>
+						</thead>
+						<tbody class="tablec">
+							<tr class="table-secondary">
+								<th style="text-align: left !important" scope="row">Task 1</th>
+								<td>Texas Offices</td>
+								<td>
+									<div id="task-1"><i class="useri fa fa-user-circle"></i></div>
+								</td>
+								<td><input placeholder="Not Assigned" /></td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul
+												class="dropdown-menu"
+												aria-labelledby="btnGroupDrop1"
+												id="dropdown-menu"
+											>
+												<li>
+													<a class="dropdown-item" id="stagnant">Stagnant</a>
+												</li>
+												<li>
+													<a class="dropdown-item" id="inprocess">In Process</a>
+												</li>
+												<li>
+													<a class="dropdown-item" id="ready">Ready</a>
+												</li>
+												<li>
+													<a class="dropdown-item" id="onhold">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle none"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+												<li class="stagnant">
+													<a class="dropdown-item">High</a>
+												</li>
+												<li class="inprocess">
+													<a class="dropdown-item">Medium</a>
+												</li>
+												<li class="ready">
+													<a class="dropdown-item">Low</a>
+												</li>
+												<li class="onhold">
+													<a class="dropdown-item">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<th style="text-align: left !important" scope="row">Task 2</th>
+								<td>N.Y Offices</td>
+								<td>
+									<div id="task-2"><i class="fa fa-user-circle"></i></div>
+								</td>
+								<td><input placeholder="Not Assigned" /></td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle none"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+												<li class="stagnant">
+													<a class="dropdown-item">Stagnant</a>
+												</li>
+												<li class="inprocess">
+													<a class="dropdown-item">In Process</a>
+												</li>
+												<li class="ready">
+													<a class="dropdown-item">Ready</a>
+												</li>
+												<li class="onhold">
+													<a class="dropdown-item">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle none"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+												<li class="stagnant">
+													<a class="dropdown-item">High</a>
+												</li>
+												<li class="inprocess">
+													<a class="dropdown-item">Medium</a>
+												</li>
+												<li class="ready">
+													<a class="dropdown-item">Low</a>
+												</li>
+												<li class="onhold">
+													<a class="dropdown-item">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<th style="text-align: left !important" scope="row">Task 3</th>
+								<td>California Offices</td>
+								<td>
+									<div id="task-3"><i class="fa fa-user-circle"></i></div>
+								</td>
+								<td><input placeholder="Not Assigned" /></td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle none"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+												<li class="stagnant">
+													<a class="dropdown-item">Stagnant</a>
+												</li>
+												<li class="inprocess">
+													<a class="dropdown-item">In Process</a>
+												</li>
+												<li class="ready">
+													<a class="dropdown-item">Ready</a>
+												</li>
+												<li class="onhold">
+													<a class="dropdown-item">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle none"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+												<li class="stagnant">
+													<a class="dropdown-item">High</a>
+												</li>
+												<li class="inprocess">
+													<a class="dropdown-item">Medium</a>
+												</li>
+												<li class="ready">
+													<a class="dropdown-item">Low</a>
+												</li>
+												<li class="onhold">
+													<a class="dropdown-item">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<th style="text-align: left !important" scope="row">Task 4</th>
+								<td>N.Y Real State Offices</td>
+								<td>
+									<div id="task-4"><i class="fa fa-user-circle"></i></div>
+								</td>
+								<td><input placeholder="Not Assigned" /></td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle none"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+												<li class="stagnant">
+													<a class="dropdown-item">Stagnant</a>
+												</li>
+												<li class="inprocess">
+													<a class="dropdown-item">In Process</a>
+												</li>
+												<li class="ready">
+													<a class="dropdown-item">Ready</a>
+												</li>
+												<li class="onhold">
+													<a class="dropdown-item">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div
+										class="btn-group"
+										role="group"
+										aria-label="Button group with nested dropdown"
+									>
+										<div class="btn-group" role="group">
+											<button
+												id="btnGroupDrop1"
+												type="button"
+												class="btn btn-secondary dropdown-toggle none"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												None
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+												<li class="stagnant">
+													<a class="dropdown-item">High</a>
+												</li>
+												<li class="inprocess">
+													<a class="dropdown-item">Medium</a>
+												</li>
+												<li class="ready">
+													<a class="dropdown-item">Low</a>
+												</li>
+												<li class="onhold">
+													<a class="dropdown-item">On Hold</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"
+	></script>
+
+	<script src="Main.js"></script>
+</html>
